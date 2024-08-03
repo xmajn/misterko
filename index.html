@@ -1,0 +1,67 @@
+<!--
+MIT License (Modified)
+Copyright (c) 2024 M1sterko
+See LICENSE file for more details.
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M1sterko</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile">
+        <img src="https://media.discordapp.net/attachments/1208508142778851398/1209949043388842075/m1sterko_new_pixel_logoo.png?ex=66af319b&is=66ade01b&hm=7f2ae7cb4a1ba8ed0a8f44702ba22cf9846a5c205ab770b11c74aff90a0f3d91&=&format=webp&quality=lossless&width=468&height=468" alt="Profile Picture">
+        <h1>M1sterko</h1>
+        <p>To som proste ja! Builder, ktorý už pôsobil na pár projektoch.. Dole máte moje projekty, tak si ich môžete pozrieť :3</p>
+        <button onclick="toggleSocialLinks()">Sociální sítě</button>
+        <div id="social-links" class="social-links">
+            <a href="https://discord.com" target="_blank">Discord</a>
+            <a href="https://youtube.com" target="_blank">YouTube</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+    <div id="portfolio" class="portfolio">
+        <h2>Nejaké tie stavby</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="https://media.discordapp.net/attachments/1208508142778851398/1264185253468176476/2024-06-29_17.19.32.png?ex=66aec003&is=66ad6e83&hm=6dabb1991dcceb6f0b81bb1e4f9c275422a64cf600e800a7a3b467cfac64037c&=&format=webp&quality=lossless&width=768&height=432" alt="Project 1">
+                <h3>Koloseum</h3>
+                <p>Zde sa najviac mlátili hráči.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://media.discordapp.net/attachments/1208508142778851398/1264185255963922544/2024-06-29_17.21.14.png?ex=66aec004&is=66ad6e84&hm=a08a22e0ae50446518b3eb773e8b5ff7d7e7a7317b438931cf0970c361f24db9&=&format=webp&quality=lossless&width=768&height=432" alt="Project 2">
+                <h3>SkyLands</h3>
+                <p>Mapa, na ktorej som sa podielal 😎</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <p>Last updated: 3.8 2024</p>
+        </div>
+        <div class="footer-right">
+            <p>&copy; by M1sterko</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleSocialLinks() {
+            var links = document.getElementById('social-links');
+            if (links.classList.contains('open')) {
+                links.classList.remove('open');
+            } else {
+                links.classList.add('open');
+            }
+        }
+    </script>
+</body>
+</html>
